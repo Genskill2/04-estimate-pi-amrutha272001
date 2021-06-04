@@ -9,7 +9,7 @@ float mc_pi(int n){
 	{
 	x=frandom();
 	y=frandom();
-	len =x*x+y*y;
+	len =sqrt(x*x+y*y);
 	if(len<1)
 	{
 	pc++;
