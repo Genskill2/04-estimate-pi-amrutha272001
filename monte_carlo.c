@@ -18,9 +18,9 @@ float mc_pi(int n){
         ps++;
 	}
 	}
-	float pi = 4.0* (float)pc/(ps+pc);
+	float pi = 4* (float)pc/(ps+pc);
 	return pi;
-}
+    }
 float frandom();
 {
   long int q = random();
