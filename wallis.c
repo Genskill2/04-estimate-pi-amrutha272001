@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-float wallis_pi(int n){	
- float x,m;
- float prod=1.0;
- 	for(int i=1;i<=n;i++)
-  {
- 	 m = (4.0*i*i)/((4.0*i*i)-1);
- 	prod=prod*m;
+float wallis_pi(int n)
+ {
+ float pi;
+ float prod=1;
+ for(int i=1;i<=n;i++){
+  float m=(4.0*i*i)/((4.0*i*i)-1);
+  prod=prod*m;
   }
- 	x=2*prod;
- 	return x;
+ pi=2*prod;
+ return pi;
 }
 int main(void)
 {
