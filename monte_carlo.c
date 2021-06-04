@@ -7,15 +7,14 @@ float mc_pi(int n){
 	float x,y,len,pi;
 	for(int i=0; i<n; i++)
 	{
-	x=frandom();
-	y=frandom();
-	len =sqrt(x*x+y*y);
-	if(len<1)
-	{
-	pc++;
+	  x=frandom();
+	  y=frandom();
+	  len =sqrt(x*x+y*y);
+	 if(len<1){
+	  pc++;
 	}
-        else{
-        ps++;
+         else{
+          ps++;
 	}
 	}
 	pi = 4* (float)pc/(ps+pc);
