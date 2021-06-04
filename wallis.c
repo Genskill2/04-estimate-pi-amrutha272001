@@ -5,7 +5,7 @@
 float wallis_pi(int n)
  {
  float pi;
- float prod=1;
+ float prod=1.0;
  for(int i=1;i<=n;i++){
   float m=(4.0*i*i)/((4.0*i*i)-1);
   prod=prod*m;
