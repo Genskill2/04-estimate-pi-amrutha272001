@@ -41,17 +41,20 @@ int main(void)
 }
 
 float mc_pi(int n){
-        int pc=0;
+        int pc=0,ps=0;
         float x,y,len;
         for(int i=0;i<n;i++){
-                x=frandom();
-                y=frandom();
-                len=sqrt((x*x) + ( y*y));
-                if(len < 1){
-                        pc++;
+               x=frandom();
+               y=frandom();
+               len=sqrt((x*x) + ( y*y));
+             if(len < 1){
+                    pc++;
                 }
-                float pi= 4* ((float)pc/n);
-                return pi;
+          else{
+            ps++;
+          }
+             float pi= 4* ((float)pc/(pc+ps));
+              return pi;
         }
 
 
