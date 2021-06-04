@@ -2,13 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
 float mc_pi(int);
-
 float mc_pi(int n)
 {	
 	int pc=0,ps=n;
-	
 	for(int i=0; i<n; i++){
 	float x,y,len;
 	x=frandom();
