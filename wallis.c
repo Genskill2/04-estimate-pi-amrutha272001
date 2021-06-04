@@ -4,14 +4,14 @@
 #include <math.h>
 float wallis_pi(int n)
  {
- float pi;
- float prod=1.0;
+ float m;
+ float prod=1.00;
  for(int i=1;i<=n;i++){
-  float m=(4.0*i*i)/((4.0*i*i)-1);
+  m=(4.0*i*i)/((4.0*i*i)-1);
   prod=prod*m;
   }
- pi=2*prod;
- return pi;
+ prod=2*prod;
+ return prod;
 }
 int main(void)
 {
