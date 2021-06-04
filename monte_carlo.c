@@ -16,6 +16,9 @@ float mc_pi(int n);
 	{
 	pc++;
 	}
+        else{
+        ps++;
+	}
 	}
 	float pi = 4.0*pc/(ps+pc);
 	return pi;
