@@ -5,7 +5,7 @@
 float mc_pi(int);
 float mc_pi(int n);
 {	
-	int pc=0,ps=n;
+	int pc=0,ps=0;
 	for(int i=0; i<n; i++)
 	{
 	float x,y,len;
@@ -17,7 +17,7 @@ float mc_pi(int n);
 	pc++;
 	}
 	}
-	float pi = 4.0*pc/ps;
+	float pi = 4.0*pc/(ps+pc);
 	return pi;
 }
 float frandom();
