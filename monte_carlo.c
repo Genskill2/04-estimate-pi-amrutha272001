@@ -17,7 +17,7 @@ float mc_pi(int n){
           ps++;
 	}
 	}
-	pi = 4* (float)pc/(ps+pc);
+	pi = 4* ((float)pc/(ps+pc));
 	return pi;
     }
 float frandom()
