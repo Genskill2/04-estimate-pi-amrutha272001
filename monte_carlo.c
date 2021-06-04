@@ -4,7 +4,7 @@
 #include <math.h>
 float mc_pi(int n){	
 	int pc=0,ps=0;
-	float x,y,len;
+	float x,y,len,pi;
 	for(int i=0; i<n; i++)
 	{
 	x=frandom();
@@ -18,7 +18,7 @@ float mc_pi(int n){
         ps++;
 	}
 	}
-	float pi = 4* (float)pc/(ps+pc);
+	pi = 4* (float)pc/(ps+pc);
 	return pi;
     }
 float frandom()
