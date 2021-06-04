@@ -5,11 +5,23 @@
 
 float wallis_pi(int);
 
+float wallis_pi(int n);
+{
+  float k=1.0;
+  int i;
+  for (i=1;i<n;i++)
+    {
+    k*=(float)(4.*i*i)/(4.*i*i-1);
+    }
+  return (k*2);
+  }
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
     pi = wallis_pi(i);
+    //printf("Wallis called %f %f\n",M_PI,pi);
     if (!(fabs(pi - M_PI) > 0.15)) {
+      //printf("Wallis g %f\n",pi);
       printf("Estimate with just %d iterations is %f which is too accurate.\n", i, pi);
       abort();
     }
