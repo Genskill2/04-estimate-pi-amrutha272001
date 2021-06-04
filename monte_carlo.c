@@ -1,27 +1,11 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>	
-float mc_pi(int n){
-        int c=0,s=0;
-        float x,y,z,pi;
-       for(int i=0;i<n;i++){
-         x=frandom();
-         y=frandom();
-         z=(x*x) + (y*y);
-         if( z < 1){
-           c++;
-           }
-         else
-      {
-          s++;
-    }
-  }
-       pi= 4 *( (float)c/(c+s));
-     return pi;
-}
+#include <math.h>
+
+float mc_pi(int);
   
-    }
+    
 float frandom()
 {
   long int q = random();
@@ -56,5 +40,18 @@ int main(void)
   }
 }
 
+float mc_pi(int n){
+        int pc=0;
+        float x,y,len;
+        for(int i=0;i<n;i++){
+                x=frandom();
+                y=frandom();
+                len=sqrt((x*x) + ( y*y));
+                if(len < 1){
+                        pc++;
+                }
+                float pi= 4* ((float)pc/n);
+                return pi;
+        }
 
 
