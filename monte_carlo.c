@@ -5,7 +5,7 @@
 
 float mc_pi(int);
 
-float mc_pi(int n);
+float mc_pi(int n)
 {	
 	int pc=0,ps=n;
 	
