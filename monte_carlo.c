@@ -21,7 +21,7 @@ float mc_pi(int n){
 	float pi = 4.0* (float)pc/(ps+pc);
 	return pi;
 }
-float frandom()
+float frandom();
 {
   long int q = random();
   float ret = (float)q/(float)RAND_MAX;
